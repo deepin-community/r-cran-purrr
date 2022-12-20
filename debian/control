@@ -1,0 +1,36 @@
+Source: r-cran-purrr
+Maintainer: Debian R Packages Maintainers <r-pkg-team@alioth-lists.debian.net>
+Uploaders: Andreas Tille <tille@debian.org>
+Section: gnu-r
+Testsuite: autopkgtest-pkg-r
+Priority: optional
+Build-Depends: debhelper-compat (= 12),
+               dh-r,
+               r-base-dev,
+               r-cran-magrittr,
+               r-cran-rlang
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/r-pkg-team/r-cran-purrr
+Vcs-Git: https://salsa.debian.org/r-pkg-team/r-cran-purrr.git
+Homepage: https://cran.r-project.org/package=purrr
+Rules-Requires-Root: no
+
+Package: r-cran-purrr
+Architecture: any
+Depends: ${R:Depends},
+         ${shlibs:Depends},
+         ${misc:Depends}
+Recommends: ${R:Recommends}
+Suggests: ${R:Suggests}
+Description: GNU R functional programming tools
+ This package provides a complete and consistent functional programming
+ toolkit for GNU R.
+ .
+ Purrr draws inspiration from many related tools:
+ .
+   * List operations defined in the Haskell prelude
+   * Scala's list methods.
+   * Functional programming libraries for javascript: underscore.js, lodash
+     and lazy.js.
+   * rlist, another R package to support working with lists. Similar goals
+     but somewhat different philosophy.

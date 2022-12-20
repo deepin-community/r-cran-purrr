@@ -1,0 +1,5 @@
+Tests: run-unit-test
+Depends: @, r-cran-testthat, r-cran-dplyr
+Restrictions: allow-stderr
+
+
